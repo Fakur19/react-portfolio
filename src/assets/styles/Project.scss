@@ -4,28 +4,28 @@
     padding: 5% 10%;
     text-align: left;
 }
-  
+
 .projects-container .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
 }
-  
+
 .projects-container .projects-grid .project {
     text-align: left;
 }
-  
+
 .project h2:hover {
     text-decoration: underline;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
-  
+
 .zoom {
     border-radius: 5px;
     transition: transform .2s;
     margin: 0 auto;
 }
-  
+
 .zoom:hover {
     transform: scale(1.05);
 }
@@ -37,13 +37,45 @@
             padding-left: 5%;
             padding-right: 5%;
         }
-  
+
         .projects-container .projects-grid {
             display: block;
         }
-      
+
         .projects-container .projects-grid .project {
             padding-bottom: 5%;
         }
     }
+}
+
+/* === ADD THIS CSS TO THE END OF YOUR Project.scss FILE === */
+
+/* This is the container for your collage images */
+.image-collage {
+    display: grid;
+    /* This creates a responsive grid. It will try to fit as many 100px columns as it can. */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+    /* The space between images */
+    background-color: #e9ecef; // A light background for the collage area
+    border-radius: 8px;
+    overflow: hidden; // Ensures images stay within the rounded corners
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease; // For a smooth hover effect
+}
+
+/* A subtle zoom effect when you hover over the collage */
+.project a:hover .image-collage {
+    transform: scale(1.03);
+}
+
+/* Styles for each image inside the collage */
+.image-collage img {
+    width: 100%;
+    /* Makes image fill the grid cell's width */
+    height: 120px;
+    /* Gives a consistent height to all images */
+    object-fit: cover;
+    /* IMPORTANT: Prevents images from stretching or squishing */
+    display: block;
 }
