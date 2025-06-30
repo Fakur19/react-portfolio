@@ -1,0 +1,66 @@
+#certifications {
+  .certifications-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .certification-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .certification-item {
+    background-color: #1c1c1e; /* Darker background for cards */
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .certification-item-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .cert-logo {
+    margin-bottom: 15px;
+  }
+
+  .cert-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white; /* To make logos with transparent backgrounds visible */
+    padding: 5px;
+  }
+
+  .cert-details h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+  }
+
+  .cert-details p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+/* Light mode adjustments */
+.light-mode #certifications {
+  .certification-item {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .certification-item-link:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+}
