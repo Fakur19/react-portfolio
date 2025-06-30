@@ -9,9 +9,10 @@ import c1984 from '../assets/images/1984-3.png';
 import ulas1 from '../assets/images/ulasbuku-1.png';
 import ulas2 from '../assets/images/ulasbuku-2.png';
 import ulas3 from '../assets/images/ulasbuku-3.png';
-import goty1 from '../assets/images/goty-1.png';
+import goty1 from '../assets/images/goty-0.png';
 import goty2 from '../assets/images/goty-2.png';
 import goty3 from '../assets/images/goty-3.png';
+import transport1 from '../assets/images/transport-1.png';
 import transport2 from '../assets/images/transport-2.png';
 import transport3 from '../assets/images/transport-3.png';
 
@@ -66,7 +67,7 @@ function Project() {
                     {/* The Carousel component replaces the single image */}
                     <Carousel showThumbs={false} infiniteLoop={true} useKeyboardArrows={true} showStatus={false}>
                         <div>
-                            <img src={a1984} alt="1984 Book Cover" />
+                            <img src={a1984} alt="1984 Streamlit Apps" />
 
                         </div>
                         <div>
@@ -111,7 +112,7 @@ function Project() {
                     {/* The Carousel component replaces the single image */}
                     <Carousel showThumbs={false} infiniteLoop={true} useKeyboardArrows={true} showStatus={false}>
                         <div>
-                            <img src={goty1} alt="Ulasbuku Game of The Year" />
+                            <img src={goty1} alt="GOTY Streamlit Apps" />
 
                         </div>
                         <div>
@@ -133,6 +134,11 @@ function Project() {
                     {/* The Carousel component replaces the single image */}
                     <Carousel showThumbs={false} infiniteLoop={true} useKeyboardArrows={true} showStatus={false}>
 
+                        
+                        <div>
+                            <img src={transport1} alt="Streamlit Web Apps" />
+
+                        </div>
                         <div>
                             <img src={transport2} alt="Sentiment Trend (All Apps)" />
 
