@@ -15,6 +15,13 @@ import goty3 from '../assets/images/goty-3.png';
 import transport1 from '../assets/images/transport-1.png';
 import transport2 from '../assets/images/transport-2.png';
 import transport3 from '../assets/images/transport-3.png';
+import gym1 from '../assets/images/gym1.png';
+import gym2 from '../assets/images/gym2.png';
+import gym3 from '../assets/images/gym3.png';
+import gym4 from '../assets/images/gym4.png';
+import pipeline1 from '../assets/images/pipeline1.png';
+import pipeline2 from '../assets/images/pipeline2.png';
+import pipeline3 from '../assets/images/pipeline3.png';
 
 
 import '../assets/styles/Project.scss';
@@ -85,28 +92,6 @@ function Project() {
                     <p>Engineered a complete NLP project in Python to analyze reader sentiment for a classic novel. Leveraged PyTorch, Hugging Face Transformers (BERT), and Pandas to process 90,000+ reviews, proving that simple star ratings are often misleading metrics for complex literary works.</p>
                 </div>
 
-                <div className="project">
-                    {/* The Carousel component replaces the single image */}
-                    <Carousel showThumbs={false} infiniteLoop={true} useKeyboardArrows={true} showStatus={false}>
-                        <div>
-                            <img src={ulas1} alt="Ulasbuku Homepage" />
-
-                        </div>
-                        <div>
-                            <img src={ulas2} alt="Ulasbuku Book's Library" />
-
-                        </div>
-                        <div>
-                            <img src={ulas3} alt="Ulasbuku Profile" />
-
-                        </div>
-                    </Carousel>
-
-                    {/* The title and description remain the same, but the link is now only on the title */}
-                    <a href="https://ulasbuku.onrender.com/" target="_blank" rel="noreferrer"><h2>Ulasbuku: Book Discovery & Community Platform</h2></a>
-                    <p>Launched "Ulasbuku," a full-stack social platform for readers built on the Node.js and MongoDB ecosystem. The application allows users to create posts, review books, comment on discussions, and follow other users in a responsive, theme-able interface.</p>
-                </div>
-
 
                 <div className="project">
                     {/* The Carousel component replaces the single image */}
@@ -133,6 +118,54 @@ function Project() {
                 <div className="project">
                     {/* The Carousel component replaces the single image */}
                     <Carousel showThumbs={false} infiniteLoop={true} useKeyboardArrows={true} showStatus={false}>
+                        <div>
+                            <img src={ulas1} alt="Ulasbuku Homepage" />
+
+                        </div>
+                        <div>
+                            <img src={ulas2} alt="Ulasbuku Book's Library" />
+
+                        </div>
+                        <div>
+                            <img src={ulas3} alt="Ulasbuku Profile" />
+
+                        </div>
+                    </Carousel>
+
+                    {/* The title and description remain the same, but the link is now only on the title */}
+                    <a href="https://ulasbuku.onrender.com/" target="_blank" rel="noreferrer"><h2>Ulasbuku: Book Discovery & Community Platform</h2></a>
+                    <p>Launched "Ulasbuku," a full-stack social platform for readers built on the Node.js and MongoDB ecosystem. The application allows users to create posts, review books, comment on discussions, and follow other users in a responsive, theme-able interface.</p>
+                </div>
+
+                <div className="project">
+                    {/* The Carousel component replaces the single image */}
+                    <Carousel showThumbs={false} infiniteLoop={true} useKeyboardArrows={true} showStatus={false}>
+                        <div>
+                            <img src={gym1} alt="GymBroS Dashboard" />
+
+                        </div>
+                        <div>
+                            <img src={gym2} alt="GymBroS Member" />
+
+                        </div>
+                        <div>
+                            <img src={gym3} alt="GymBroS Transactions" />
+
+                        </div>
+                        <div>
+                            <img src={gym4} alt="GymBroS Admin" />
+
+                        </div>
+                    </Carousel>
+
+                    {/* The title and description remain the same, but the link is now only on the title */}
+                    <a href="https://gym-apps-itej.onrender.com/" target="_blank" rel="noreferrer"><h2>GymBroS</h2></a>
+                    <p>A full-stack web application designed to manage gym operations, including member registration, check-ins, payments, and business analytics.</p>
+                </div>
+
+                <div className="project">
+                    {/* The Carousel component replaces the single image */}
+                    <Carousel showThumbs={false} infiniteLoop={true} useKeyboardArrows={true} showStatus={false}>
 
                         
                         <div>
@@ -152,6 +185,30 @@ function Project() {
                     {/* The title and description remain the same, but the link is now only on the title */}
                     <a href="https://github.com/Fakur19/indonesian-online-transportation-sentiment-analysis" target="_blank" rel="noreferrer"><h2>Indonesian Ride-Hailing: A Competitive Landscape Analysis</h2></a>
                     <p>Performed an in-depth competitive analysis of Indonesia's top ride-hailing apps by analyzing 1.4 million Play Store reviews. Using Python and NLP, this project identified key market drivers, benchmarked app performance across aspects like Price and Service, and pinpointed Customer Service as a universal weakness and strategic opportunity.</p>
+                </div>
+
+                 <div className="project">
+                    {/* The Carousel component replaces the single image */}
+                    <Carousel showThumbs={false} infiniteLoop={true} useKeyboardArrows={true} showStatus={false}>
+
+                        
+                        <div>
+                            <img src={pipeline1} alt="Metabase Dashboard 1" />
+
+                        </div>
+                        <div>
+                            <img src={pipeline2} alt="Metabase Dashboard 2" />
+
+                        </div>
+                        <div>
+                            <img src={pipeline3} alt="Pipeline Architecture" />
+
+                        </div>
+                    </Carousel>
+
+                    {/* The title and description remain the same, but the link is now only on the title */}
+                    <a href="https://github.com/Fakur19/steam-pipeline" target="_blank" rel="noreferrer"><h2>Real-Time Steam Review Analysis Pipeline</h2></a>
+                    <p>This project is a complete, end-to-end data engineering pipeline that captures Steam game reviews in real-time, processes them, and visualizes the results on a live dashboard.</p>
                 </div>
 
 

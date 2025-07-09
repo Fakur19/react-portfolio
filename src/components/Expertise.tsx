@@ -9,21 +9,26 @@ import { faChartBar } from "@fortawesome/free-regular-svg-icons";
 
 const labelsFirst = [
     "Python",
-    "Jupyter",
-    "NLP",
+    "Jupyter Notebook",
+    "Natural Language Processing",
     "Deep Learning",
     "SQL",
     "Excel",
-    "R"
+    "R",
+    "Scikit-learn",
+    "Vertex AI"
 ];
 
 const labelsSecond = [
     "Tableau",
     "Looker Studio",
     "Power BI",
+    "Metabase",
     "Seaborn",
     "Matplotlib",
-    "Excel"
+    "Excel",
+    "Plotly",
+    "BigQuery"
 ];
 
 const labelsThird = [
@@ -31,9 +36,12 @@ const labelsThird = [
     "Python",
     "Pandas",
     "PostgreSQL",
-    "Excel",
+    "MongoDB",
     "Numpy",
     "Power Query",
+    "Docker",
+    "Apache Spark",
+    "GCP Dataflow"
 ];
 
 function Expertise() {
@@ -45,7 +53,7 @@ function Expertise() {
                     <div className="skill">
                         <FontAwesomeIcon icon={faChartBar} size="3x" />
                         <h3>Data Analysis & Insights</h3>
-                        <p>I dive deep into complex datasets to uncover hidden patterns, trends, and correlations. Using statistical methods and exploratory analysis, I translate raw numbers into actionable insights that answer key business questions and drive strategic decisions.</p>
+                        <p>I excel at diving deep into complex datasets to uncover hidden patterns, trends, and correlations. Leveraging advanced statistical methods and exploratory data analysis, I transform raw numbers into actionable insights that solve key business problems and drive strategic decision-making.</p>
                         <div className="flex-chips">
                             <span className="chip-title">Tech stack:</span>
                             {labelsFirst.map((label, index) => (
@@ -57,7 +65,7 @@ function Expertise() {
                     <div className="skill">
                         <FontAwesomeIcon icon={faGaugeHigh} size="3x" />
                         <h3>Business Intelligence & Visualization</h3>
-                        <p>I transform complex data into compelling visual stories. I design and develop interactive dashboards and reports that empower stakeholders to monitor performance, explore trends, and make informed, data-driven decisions in real-time.</p>
+                        <p>I specialize in transforming complex data into compelling and intuitive visual stories. I design and develop interactive, real-time dashboards and reports that empower stakeholders to effortlessly monitor performance, explore critical trends, and make informed, data-driven decisions.</p>
                         <div className="flex-chips">
                             <span className="chip-title">Tech stack:</span>
                             {labelsSecond.map((label, index) => (
@@ -69,7 +77,7 @@ function Expertise() {
                     <div className="skill">
                         <FontAwesomeIcon icon={faDatabase} size="3x" />
                         <h3>Data Engineering & ETL</h3>
-                        <p>I build robust and scalable data pipelines to extract, transform, and load data from various sources. My focus is on creating clean, reliable datasets that serve as the single source of truth for all analysis and business reporting.</p>
+                        <p>I engineer robust, scalable, and automated data pipelines to efficiently extract, transform, and load data from a wide variety of sources. My focus is on building clean, reliable, and high-performance datasets that serve as the single source of truth for all analytics and business reporting, including real-time data streaming.</p>
                         <div className="flex-chips">
                             <span className="chip-title">Tech stack:</span>
                             {labelsThird.map((label, index) => (
