@@ -51,8 +51,8 @@
 
 .about-section .image-wrapper {
   z-index: 2;
-  width: 180px;
-  height: 180px;
+  width: 180px; /* Fixed width for desktop */
+  height: 180px; /* Fixed height for desktop to maintain aspect ratio */
   border-radius: 50%;
   overflow: hidden;
 
@@ -155,8 +155,12 @@
         }
 
         .about-section .image-wrapper {
-            padding-left: 5%;
-            width: 100%;
+            /* Keep the image-wrapper centered and with a consistent size on mobile */
+            width: 150px; /* Smaller fixed width for mobile */
+            height: 150px; /* Smaller fixed height for mobile */
+            margin: 0 auto; /* Center the image wrapper horizontally */
+            padding-left: 0; /* Remove padding-left from here */
+            display: block; /* Ensure it takes full width for margin auto to work */
         }
     }
 }
