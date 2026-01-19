@@ -141,26 +141,24 @@ function Project() {
                     {/* The Carousel component replaces the single image */}
                     <Carousel showThumbs={false} infiniteLoop={true} useKeyboardArrows={true} showStatus={false}>
                         <div>
-                            <img src={gym1} alt="GymBroS Dashboard" />
+                            <img src={gym1} alt="Bugareka Dashboard" />
 
                         </div>
                         <div>
-                            <img src={gym2} alt="GymBroS Member" />
+                            <img src={gym2} alt="Bugareka Class Management" />
+                        </div>
+                        <div>
+                            <img src={gym3} alt="Bugareka Membership Management" />
 
                         </div>
                         <div>
-                            <img src={gym3} alt="GymBroS Transactions" />
-
-                        </div>
-                        <div>
-                            <img src={gym4} alt="GymBroS Admin" />
-
+                            <img src={gym4} alt="Bugareka Transaction" />
                         </div>
                     </Carousel>
 
                     {/* The title and description remain the same, but the link is now only on the title */}
-                    <a href="https://gym-apps-itej.onrender.com/" target="_blank" rel="noreferrer"><h2>GymBroS</h2></a>
-                    <p>A full-stack web application designed to manage gym operations, including member registration, check-ins, payments, and business analytics.</p>
+                    <a href="https://bugareka.onrender.com/" target="_blank" rel="noreferrer"><h2>Bugareka - Transform Your Fitness Management</h2></a>
+                    <p>A full-stack web application designed to manage fitness business operations, including member registration, check-ins, payments, and business analytics.</p>
                 </div>
 
                 <div className="project">
